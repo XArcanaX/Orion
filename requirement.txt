@@ -1,0 +1,7 @@
+elevenlabs
+openai
+python-dotenv
+pillow
+sounddevice
+soundfile
+langchain-community
