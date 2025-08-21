@@ -1,6 +1,7 @@
 import os
 import signal
 from dotenv import load_dotenv
+from tools import client_tools
 
 from elevenlabs.client import ElevenLabs
 from elevenlabs.conversational_ai.conversation import Conversation
@@ -19,6 +20,7 @@ elevenlabs = ElevenLabs(api_key=api_key)
 conversation = Conversation(
     elevenlabs,
     agent_id,
+    client_tools=client_tools,
     requires_auth=bool(api_key),
     audio_interface=DefaultAudioInterface(),
     callback_agent_response=lambda response: print(f"Agent: {response}"),
