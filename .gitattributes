@@ -1,0 +1,8 @@
+* text=auto
+
+# Scripts/Code qu’on préfère en LF
+*.py  text eol=lf
+*.sh  text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.md  text eol=lf
